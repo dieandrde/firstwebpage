@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #eb880f, #ca7805, #864910, #4e1d10, #000000);
+    /*background-color: #fbf7ea;*/
+}
+/* encabezado */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+}
+header img{
+    width: 250px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+
+.home:hover {
+    background-color: #e0990c;
+    color: white;
+}
+/*  sección de portada */
+.hero {
+    height: 100vh;
+    background: url('./imagenes/portada.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Cormorant", serif;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* animación  */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* estilo secciones */
+section {
+    padding: 64px 32px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* animación enlaces menu */
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    color: #ffcc00;
+    border-radius: 5px;
+}
+
+
+
+.titulo h2{
+    text-align: center;
+    font-weight: 300px;
+    color: rgb(248, 248, 248);
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.titulo p{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    unicode-bidi: isolate;
+    font-family: "Saira", sans-serif;
+}
+
+.contenedor h2{
+    text-align: center;
+    font-weight: 300px;
+    color: rgb(248, 248, 248);
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.contenedor-desarrollo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-desarrollo img{
+    width: 40%;
+    
+}
+
+.desarrollo{
+    margin-bottom: 20px;
+}
+
+.n-desarrollo{
+    margin-bottom: 7px;
+    color: rgb(255, 255, 255);
+}
+.desarrollo h3{
+    color: white;
+    font-family: "Saira", sans-serif;
+}
+.desarrollo p{
+    color: white;
+    font-family: "Saira", sans-serif;
+    display: block;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.checklist-desarrollo{
+    width: 45%;
+}
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to top, #ebba46 0%, #ff9100 100%);
+    width: 30px;
+    height: 30px;
+    color: beige;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate
+}
+
+
+.fcc-btn {
+    background-color: #ffbb00;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-style: groove;
+   
+    
+  }
+
+.fcc-btn:hover {
+    background-color: #223094;
+}
+
+.container{
+    max-width: 960px;
+}
+
+.game{ 
+width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    background-color: #fc890ed4;
+    border: 2px solid #885e01;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(254, 254, 254, 0.7);
+    overflow: hidden;
+}
+.game img {
+    width: 100%;
+    border-bottom: 1px solid #0e2c05;
+}
+.comprar {
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10PX;
+    margin: 10PX;
+}
+
+#video{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#video iframe{
+    padding: 10px;
+    margin: 10px;
+}
+.texto-oculto {
+    display: none;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Saira", sans-serif;
+    margin-top: 30px; /* lo usé para separar el footer del contenido anterior */
+}
+
+footer p { 
+    margin: 10px;
+    font-size: 15px;
+}
+
+/* agregué el instagram del director de arte */
+.instagram-btn {
+    display: inline-block;
+    background-color: #E1306C; /* Color tipo ig */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Saira", sans-serif;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.instagram-btn:hover {
+    background-color: #bc2a8d; /* Color más oscuro cuando pasa el mouse */
+}
+
+.gif{
+    display: flex;
+    margin-top: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
